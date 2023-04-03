@@ -1,22 +1,21 @@
 {
   "name": "cashnamu-next13",
-  "version": "0.1.0",
   "private": true,
+  "workspaces": {
+    "packages": [
+      "package/*"
+    ]
+  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "front": "yarn workspace front"
+  },
+  "packageManager": "yarn@3.5.0",
+  "dependenciesMeta": {
+    "next@13.2.4": {
+      "unplugged": true
+    }
   },
   "dependencies": {
-    "@types/node": "18.15.3",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "18.0.11",
-    "eslint": "8.36.0",
-    "eslint-config-next": "13.2.4",
-    "next": "13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.0.2"
+    "next-images": "^1.8.4"
   }
 }

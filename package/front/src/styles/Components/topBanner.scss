@@ -1,0 +1,60 @@
+//mobile first
+.top-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.938em;
+
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+
+  .top-banner-left {
+    padding-left: 1.25em;
+  }
+
+  .top-banner-right {
+    display: flex;
+    align-items: center;
+
+    padding-right: 1.25em;
+
+    .login-text {
+      position: relative;
+      margin-right: 1em;
+
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: -0.044em;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.25em;
+        bottom: 0;
+        left: 0;
+        background-color: var(--light-gold);
+      }
+    }
+  }
+}
+
+.top-banner.top-banner-login {
+  justify-content: center;
+
+
+  button {
+    position: absolute;
+    left: 0px;
+    width: 44px;
+    height: 44px;
+
+  }
+}
