@@ -12,6 +12,7 @@ import "../../styles/pages/login.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
+//TODO: right url
 const SNS_LOGIN_MENU = [
   { title: "네이버", url: "/" },
   { title: "카카오", url: "/" },
